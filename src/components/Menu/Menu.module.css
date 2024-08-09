@@ -1,0 +1,70 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    min-height: 48px;
+    align-items: center;
+    padding: 0 16px;
+    border-bottom: 2px solid var(--color-gray400);
+    background: var(--color-white);
+    box-sizing: border-box;
+}
+
+.menuItem {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderContainer {
+    flex: 1 1 auto;
+    min-width: 280px;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.cityContainer {
+    flex: 0 0 auto;
+}
+
+.cityContainer label {
+    display: flex;
+    gap: 8px;
+}
+
+.buttonContainer {
+    flex: 0 0 auto;
+    width: 50px;
+}
+
+.slider {
+    height: 30px;
+    flex: 1 1 auto;
+}
+
+.thumb {
+    height: 30px;
+    width: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray800);
+    border-radius: 50%;
+    cursor: grab;
+    outline: none;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+}
+
+.track {
+    background: var(--color-gray800);
+    height: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+}
